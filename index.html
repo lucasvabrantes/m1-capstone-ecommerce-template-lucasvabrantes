@@ -12,14 +12,14 @@
 <body>
     <header>
 
-        <img id="logo" src="./img/Radiohead-Logo.png" alt="">
+        <h1 id="logo">Radiohead Store</h1> 
         
         <nav class="containerMenu">
             <ul class="ulContainerMenu">
-                <li class="itemContainerMenu"><a href="#">Todos</a></li>
-                <li class="itemContainerMenu"><a href="#">Acessórios</a></li>
-                <li class="itemContainerMenu"><a href="#">Discos</a></li>
-                <li class="itemContainerMenu"><a href="#">Camisetas</a></li>
+                <li class="itemContainerMenu"><a id="todos" href="#">Todos</a></li>
+                <li class="itemContainerMenu"><a id="fitak7" href="#">Fita K7</a></li>
+                <li class="itemContainerMenu"><a id='discos'href="#">Discos</a></li>
+                <li class="itemContainerMenu"><a id="camisetas"href="#">Camisetas</a></li>
             </ul>
         </nav>
     </header>
@@ -38,14 +38,20 @@
         
         <aside>
             <div id="search">
-                <input type="text" placeholder="O que você procura?" name="search" />
-                <button>Pesquisar</button>
+                <input id='inputBusca'type="text" placeholder="O que você procura?" name="search" />
+                <button id="botaoBusca">Pesquisar</button>
 
             </div>
 
             <div id="carrinho">
                 <span>Carrinho de Compras</span>
                 <ul id="conteudoCarrinho">
+                    <div class="hide">
+                        <span>Carrinho Vazio</span>
+                        <small>Adicione itens</small>
+                    </div>
+
+                    
                     
 
                 </ul>
@@ -63,11 +69,15 @@
                 </div>
 
             </div>
+
+
         </aside>
         
     </main>
 
     <footer>
+        <small>Dev Lucas Abrantes.</small><br>
+        <small>Todos os direitos reservados desde 2023</small>
         
     </footer>
     
